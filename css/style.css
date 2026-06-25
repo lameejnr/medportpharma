@@ -78,3 +78,53 @@ main {
     display: none;
   }
 }
+/* --- IMAGE ALIGNMENT FIX --- */
+
+/* General image containers */
+.hero-photo,
+.about-photo,
+.partnership-photo {
+  width: 100%;
+  height: 320px; /* consistent height across sections */
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Product icons */
+.product-icon img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 0.6rem auto;
+}
+
+/* Logo */
+.logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Ensure text columns align vertically */
+.two-column {
+  align-items: center;
+}
+
+/* Hero section alignment */
+.hero-inner {
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero-photo,
+  .about-photo,
+  .partnership-photo {
+    height: 220px;
+  }
+}
+
