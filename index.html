@@ -7,8 +7,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header class="site-header">
-  <div class="logo">MedPort Pharma</div>
+  <!-- REAL LOGO -->
+  <img src="img/logo.png" class="logo-img" alt="MedPort Pharma Logo">
+  
   <nav class="nav">
     <a href="#home" class="active">Home</a>
     <a href="#about">About Us</a>
@@ -33,9 +36,11 @@
           <a href="#partnership" class="btn secondary">Partner With Us</a>
         </div>
       </div>
+
       <div class="hero-visual">
-        <!-- Replace with your hero image -->
-        <div class="hero-photo"></div>
+        <!-- HERO IMAGE -->
+        <div class="hero-photo" style="background-image: url('img/warehouse.jpg');"></div>
+
         <div class="floater floater-1">
           <h3>Licensed Distribution</h3>
           <p>Structured, compliant access to high‑quality medicines.</p>
@@ -67,9 +72,10 @@
           procurement, last‑mile delivery, and formulary decisions in resource‑constrained settings.
         </p>
       </div>
+
       <div class="about-visual">
-        <!-- Replace with your about/team image -->
-        <div class="about-photo"></div>
+        <!-- ABOUT IMAGE -->
+        <div class="about-photo" style="background-image: url('img/team.jpg');"></div>
       </div>
     </div>
   </section>
@@ -81,47 +87,41 @@
       <p class="section-lead">
         Representative therapeutic areas and services we focus on, subject to local registration and market access.
       </p>
+
       <div class="card-grid product-grid">
+
         <div class="product-card">
           <div class="product-icon">
             <img src="img/capsule1.svg" alt="Capsule icon">
           </div>
           <h3>Anti‑infectives</h3>
-          <p>
-            Arteether, Amoxiclav, Meropenem and other key antibiotics and antimalarials
-            aligned with regional treatment guidelines.
-          </p>
+          <p>Arteether, Amoxiclav, Meropenem and other key antibiotics and antimalarials.</p>
         </div>
+
         <div class="product-card">
           <div class="product-icon">
             <img src="img/bottle1.svg" alt="Bottle icon">
           </div>
           <h3>Oncology &amp; Specialty</h3>
-          <p>
-            Docetaxel, Pembrolizumab and select oncology agents for tertiary centers and
-            specialized programs.
-          </p>
+          <p>Docetaxel, Pembrolizumab and select oncology agents.</p>
         </div>
+
         <div class="product-card">
           <div class="product-icon">
             <img src="img/tablet.svg" alt="Tablet icon">
           </div>
           <h3>Metabolic &amp; Chronic Care</h3>
-          <p>
-            Semaglutide and other chronic disease therapies tailored to local formularies
-            and access pathways.
-          </p>
+          <p>Semaglutide and other chronic disease therapies.</p>
         </div>
+
         <div class="product-card">
           <div class="product-icon">
             <img src="img/blister1.svg" alt="Blister pack icon">
           </div>
           <h3>Supportive &amp; Adjunct</h3>
-          <p>
-            Tizanidine, multivitamins, and supportive therapies designed around regional
-            clinical practice and patient needs.
-          </p>
+          <p>Tizanidine, multivitamins, and supportive therapies.</p>
         </div>
+
       </div>
     </div>
   </section>
@@ -133,24 +133,25 @@
         <h2>Partnership &amp; Compliance</h2>
         <p>
           We work with manufacturers, distributors, and institutions to design compliant,
-          audit‑ready supply chains into West African markets. Our focus is on documentation,
-          licensing, and quality agreements that stand up to regulatory scrutiny.
+          audit‑ready supply chains into West African markets.
         </p>
         <p>
           From product registration strategy to ongoing pharmacovigilance support, MedPort
           Pharma builds partnerships that balance access, safety, and sustainability.
         </p>
+
         <ul class="bullet-list">
           <li><strong>Regulatory documentation:</strong> Dossiers, licenses, and quality agreements.</li>
           <li><strong>Cross‑border expertise:</strong> U.S.–Nigeria and wider West Africa focus.</li>
           <li><strong>Audit‑ready workflows:</strong> Traceable, documented processes end‑to‑end.</li>
         </ul>
       </div>
+
       <div class="partnership-visual">
-        <div class="partnership-photo"></div>
-        <div class="badge">
-          U.S.–Nigeria Cross‑Border Expertise
-        </div>
+        <!-- PARTNERSHIP IMAGE -->
+        <div class="partnership-photo" style="background-image: url('img/compliance.jpg');"></div>
+
+        <div class="badge">U.S.–Nigeria Cross‑Border Expertise</div>
       </div>
     </div>
   </section>
@@ -167,26 +168,19 @@
         <p><strong>Email:</strong> <a href="mailto:info@medportpharma.com">info@medportpharma.com</a></p>
         <p><strong>Location:</strong> Nashville, TN, USA – West Africa focus.</p>
       </div>
+
       <div>
         <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
-          </label>
+          <label>Name <input type="text" required></label>
+          <label>Email <input type="email" required></label>
+          <label>Message <textarea rows="4" required></textarea></label>
           <button type="submit" class="btn primary">Submit</button>
           <p class="form-note">Static form – connect to your preferred form service later.</p>
         </form>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer class="site-footer">
@@ -198,5 +192,6 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
