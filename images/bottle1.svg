@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="cap" x1="84" y1="36" x2="156" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2F4A"/>
+      <stop offset="1" stop-color="#1B4965"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="74" y1="70" x2="176" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+    <linearGradient id="label" x1="86" y1="120" x2="154" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12B76A"/>
+      <stop offset="1" stop-color="#2E90FA"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(90 88) rotate(60) scale(120 100)">
+      <stop stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20" y="-20" width="280" height="280" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M78 34h84c8.837 0 16 7.163 16 16v14c0 8.837-7.163 16-16 16H78c-8.837 0-16-7.163-16-16V50c0-8.837 7.163-16 16-16Z" fill="url(#cap)"/>
+    <path d="M78 34h84c8.837 0 16 7.163 16 16v14c0 8.837-7.163 16-16 16H78c-8.837 0-16-7.163-16-16V50c0-8.837 7.163-16 16-16Z" stroke="#0f172a" stroke-opacity="0.18" stroke-width="3"/>
+    <path d="M70 80h100c18.778 0 34 15.222 34 34v62c0 22.091-17.909 40-40 40H76c-22.091 0-40-17.909-40-40v-62c0-18.778 15.222-34 34-34Z" fill="url(#jar)"/>
+    <path d="M70 80h100c18.778 0 34 15.222 34 34v62c0 22.091-17.909 40-40 40H76c-22.091 0-40-17.909-40-40v-62c0-18.778 15.222-34 34-34Z" stroke="#0f172a" stroke-opacity="0.14" stroke-width="3"/>
+    <path d="M72 124h96c10.493 0 19 8.507 19 19v18c0 10.493-8.507 19-19 19H72c-10.493 0-19-8.507-19-19v-18c0-10.493 8.507-19 19-19Z" fill="url(#label)" opacity="0.9"/>
+    <path d="M72 124h96c10.493 0 19 8.507 19 19v18c0 10.493-8.507 19-19 19H72c-10.493 0-19-8.507-19-19v-18c0-10.493 8.507-19 19-19Z" stroke="#0f172a" stroke-opacity="0.12" stroke-width="2"/>
+    <path d="M60 100c10-18 26-28 48-28h46c22 0 40 10 54 30" stroke="url(#shine)" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+    <path d="M72 150h96" stroke="#fff" stroke-opacity="0.65" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

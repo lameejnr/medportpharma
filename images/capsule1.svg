@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="capA" x1="44" y1="70" x2="170" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2E90FA"/>
+      <stop offset="1" stop-color="#1570EF"/>
+    </linearGradient>
+    <linearGradient id="capB" x1="80" y1="52" x2="208" y2="168" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12B76A"/>
+      <stop offset="1" stop-color="#039855"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(92 80) rotate(55) scale(110 90)">
+      <stop stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20" y="-20" width="280" height="280" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M78 70c16.569 0 30 13.431 30 30v40c0 16.569-13.431 30-30 30S48 156.569 48 140v-40c0-16.569 13.431-30 30-30Z" fill="url(#capA)"/>
+    <path d="M162 70c16.569 0 30 13.431 30 30v40c0 16.569-13.431 30-30 30s-30-13.431-30-30v-40c0-16.569 13.431-30 30-30Z" fill="url(#capB)"/>
+    <path d="M108 100h24v40h-24z" fill="#fff" fill-opacity="0.16"/>
+    <path d="M78 70h84c16.569 0 30 13.431 30 30v40c0 16.569-13.431 30-30 30H78c-16.569 0-30-13.431-30-30v-40c0-16.569 13.431-30 30-30Z" stroke="#0f172a" stroke-opacity="0.14" stroke-width="3"/>
+    <path d="M66 92c8-12 18-18 32-18h60c14 0 26 8 34 24" stroke="url(#shine)" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+    <path d="M84 162c10 5 22 8 36 8h22c16 0 30-6 40-16" stroke="#fff" stroke-opacity="0.22" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
