@@ -1,15 +1,15 @@
-/* GLOBAL WRAPPER FIX */
+/* GLOBAL WRAPPER */
 main {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 1rem;
 }
 
-/* HERO FIX */
+/* HERO */
 .hero-inner {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -18,50 +18,84 @@ main {
   height: 320px;
   border-radius: 16px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-/* ABOUT FIX */
+/* ABOUT */
 .about-photo {
   width: 100%;
-  height: 260px;
+  height: 280px;
   border-radius: 14px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-/* PARTNERSHIP FIX */
+/* PARTNERSHIP */
 .partnership-photo {
   width: 100%;
-  height: 260px;
+  height: 280px;
   border-radius: 14px;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-/* PRODUCT GRID FIX */
+/* PRODUCT GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.4rem;
+}
+
 .product-card {
-  min-height: 220px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  border: 1px solid #dde4f2;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  min-height: 240px;
 }
 
-/* ICON FIX */
 .product-icon img {
   width: 48px;
   height: 48px;
-  display: block;
+  object-fit: contain;
+  margin-bottom: 0.6rem;
 }
 
-/* FLOATERS FIX */
+/* FLOATERS */
 .floater {
   width: 200px;
   padding: 1rem;
   backdrop-filter: blur(6px);
+  border-radius: 10px;
+  background: rgba(2,31,59,0.9);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-/* RESPONSIVE FIX */
+/* TWO-COLUMN ALIGNMENT */
+.two-column {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .hero-inner,
   .two-column {
@@ -78,53 +112,3 @@ main {
     display: none;
   }
 }
-/* --- IMAGE ALIGNMENT FIX --- */
-
-/* General image containers */
-.hero-photo,
-.about-photo,
-.partnership-photo {
-  width: 100%;
-  height: 320px; /* consistent height across sections */
-  border-radius: 16px;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-/* Product icons */
-.product-icon img {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 0.6rem auto;
-}
-
-/* Logo */
-.logo-img {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-}
-
-/* Ensure text columns align vertically */
-.two-column {
-  align-items: center;
-}
-
-/* Hero section alignment */
-.hero-inner {
-  align-items: center;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .hero-photo,
-  .about-photo,
-  .partnership-photo {
-    height: 220px;
-  }
-}
-
